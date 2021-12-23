@@ -1,0 +1,16 @@
+{
+  "presets": ["module:metro-react-native-babel-preset"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": [
+          {"@colors": "./src/shared/theme/colors"},
+          {"@fontSize": "./src/shared/theme/font-size"}
+        ],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    ]
+  ]
+}
