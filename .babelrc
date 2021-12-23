@@ -7,7 +7,9 @@
         "root": ["./src"],
         "alias": [
           {"@colors": "./src/shared/theme/colors"},
-          {"@fontSize": "./src/shared/theme/font-size"}
+          {"@fontSize": "./src/shared/theme/font-size"},
+          {"@theme": "./src/shared/theme/theme"},
+          {"@fonts": "./src/shared/theme/fonts/index"}
         ],
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
