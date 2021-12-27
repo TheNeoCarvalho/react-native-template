@@ -1,39 +1,33 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the TypeScript template
- * https://github.com/react-native-community/react-native-template-typescript
- *
- * @format
- */
+/* eslint-disable react-native/no-inline-styles */
+import React from 'react'
+import {StatusBar, Text, View, Dimensions} from 'react-native'
 
-import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  Text,
-  View,
-  Dimensions
-} from 'react-native';
+import colors from '@colors'
+import fontSize from '@fontSize'
 
 const App = () => {
- 
+    return (
+        <>
+            <StatusBar backgroundColor={'#fff'} barStyle="dark-content" />
+            <View
+                style={{
+                    backgroundColor: '#fff',
+                    flex: 1,
+                    height: Dimensions.get('window').height,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                }}>
+                <Text
+                    style={{
+                        textAlign: 'center',
+                        color: colors.light.primary,
+                        fontSize: fontSize.veryLarge,
+                    }}>
+                    Lorem ipsum dolor sit ame.
+                </Text>
+            </View>
+        </>
+    )
+}
 
-  return (
-    <SafeAreaView>
-      <StatusBar backgroundColor={'#000'} barStyle='light-content' />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic">
-        <View
-          style={{ backgroundColor: '#000', flex: 1, height: Dimensions.get('window').height , justifyContent: 'center', alignItems: 'center'}}  
-        >
-          <Text style={{ color: 'white', fontSize: 50 }}>Ops..</Text>
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
-};
-
-export default App;
+export default App
